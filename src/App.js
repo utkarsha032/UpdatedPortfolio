@@ -10,6 +10,8 @@ import MoveToTop from "./Components/MoveToTop";
 import Lottie from  "lottie-react";
 import nightsky from "./LottieFiles/night-sky.json";
 import HashLoader from "react-spinners/HashLoader";
+import Experience from "./Components/Experience";
+
 
 
 function App() {
@@ -50,6 +52,7 @@ function App() {
         <Route path="/About" element={<About/>}/>
         <Route path="/Project" element={<Project/>}/>
         <Route path="/Resume" element={<Resume/>}/>
+        <Route path="/Experience" element={<Experience />} />
       </Routes>
       
       <Footer/>
@@ -60,3 +63,67 @@ function App() {
 }
 
 export default App;
+
+
+/*
+// src/App.js
+import { Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Nav from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Resume from "./Components/Resume";
+import Project from "./Components/Projects";
+import MoveToTop from "./Components/MoveToTop";
+import Lottie from "lottie-react";
+import nightsky from "./LottieFiles/night-sky.json";
+import HashLoader from "react-spinners/HashLoader";
+
+function App() {
+  const [loading, setLoading] = useState(true);
+
+  // simple splash loader; remove if you don't want it
+  useEffect(() => {
+    const t = setTimeout(() => setLoading(false), 1200);
+    return () => clearTimeout(t);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="loader">
+        <HashLoader
+          color="#9067C6"
+          loading
+          size={100}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      </div>
+    );
+  }
+
+  return (
+    <>
+]
+      <Lottie className="bg" animationData={nightsky} loop />
+      <Lottie className="bgtwo" animationData={nightsky} loop />
+      <Lottie className="bgtemp" animationData={nightsky} loop />
+
+      <Nav />
+      <MoveToTop />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Project" element={<Project />} />
+        <Route path="/Resume" element={<Resume />} />
+      </Routes>
+
+      <Footer />
+    </>
+  );
+}
+
+export default App;
+*/

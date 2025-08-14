@@ -29,12 +29,13 @@ const Home = () => {
         <div className='AboutText'>
           <h1 className='AboutTextHeading'>Brief <b>introduction</b></h1>
           <p>
-            I love the process of changing a raw idea into a website or a product 
-            that impacts lives. 
-            I want to do work that challenges me as a beginner & work that I can 
-            be proud of.<br /><br />
-            I am fluent in <b>C++/Java</b> and know a bit of <b>Python</b> and am trying to learn <b>MERN</b> stack and data structures and algorithms.<br />
-            I plan to learn <b>Next.js</b>, <b>Three.js</b> and<b> Typescript</b> in the near future. <br /><br />
+            I love turning ideas into products that actually get used. I work across
+            <b> embedded systems</b> and <b>full-stack web</b>, and I’m comfortable in
+            <b> C++</b>, <b>Java</b>, and <b>Python</b>. Lately I’ve been building with the
+            <b> MERN</b> stack and sharpening my data structures & algorithms.<br /><br />
+            I’m an <b>ECE pre-final year</b> student at IGDTUW (Dept. Rank 2), a
+            <b> TI WiSH’25 Design thinking project Hackathon — 1st Prize</b> winner, and currently exploring
+            applied AI through research.<br /><br />
             Also, I love <b>coffee and music</b> <CiCoffeeCup style={{scale:"1.5", rotate:"15deg"}}/>   
           </p>
         </div>

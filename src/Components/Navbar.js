@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import {AiOutlineHome} from "react-icons/ai";
 import {BsPerson, BsCodeSlash} from "react-icons/bs";
 import {CgFileDocument} from "react-icons/cg";
+import { MdWork } from "react-icons/md";
 
 
 const Nav = () => {
@@ -42,7 +43,7 @@ const Nav = () => {
   return (
     <nav className={navbarblur? 'Navbar blur':'Navbar'}> 
  
-        <h1 title='Reload' onClick={()=>window.location.reload(true)} className='Logo'>DS</h1>
+        <h1 title='Reload' onClick={()=>window.location.reload(true)} className='Logo'>UV</h1>
 
         <div className='Hamburger' onClick={showMenu}>
             <span className='bar'></span>
@@ -54,6 +55,7 @@ const Nav = () => {
             <li onClick={hideMenu}><Link to="/"><AiOutlineHome/> Home</Link></li>
             <li onClick={hideMenu}><Link to="/About"><BsPerson/> About</Link></li>
             <li onClick={hideMenu}><Link to="/Project"><BsCodeSlash/> Project</Link></li>
+            <li onClick={hideMenu}><Link to="/Experience"><MdWork/> Experience</Link></li>
             <li onClick={hideMenu}><Link to="/Resume"><CgFileDocument/> Resume</Link></li>
         </ul>
         
